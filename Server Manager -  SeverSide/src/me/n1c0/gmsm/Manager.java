@@ -25,7 +25,7 @@ public class Manager  extends JavaPlugin  {
 	}
 	
 	public void onDisable() {
-		tcpServerThread.interrupt();
+		tcpServer.killServer();
 	}
 
 	
